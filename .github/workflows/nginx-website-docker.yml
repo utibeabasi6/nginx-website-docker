@@ -1,12 +1,12 @@
 name: learn-github-actions
 on: [push]
 jobs:
-  check-bats-version:
+  build-docker-image:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
+      - uses: docker/build-push-action@v2.6.1
         with:
-          node-version: '14'
-      - run: npm install -g bats
-      - run: bats -v
+          push: true
+          tags: utibeabasi6/nginx-website
+      
