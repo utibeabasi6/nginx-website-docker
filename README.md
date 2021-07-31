@@ -1,1 +1,1 @@
-# CI/CD pipeline to automatically build and push a docker image to docker hub
+# CI/CD pipeline to automatically build and push a docker image to docker hub with github actions
