@@ -1,4 +1,4 @@
-name: ci
+name: Nginx website image
 
 on:
   push:
