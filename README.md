@@ -6,10 +6,10 @@ This project aims to demonstrate how to build a Continous integration pipeline t
 
 ## Installation guide
 ### **Install git**
-[http://installgit.com](https://git.com)
+[https://git-scm.com/downloads](https://git-scm.com/downloads)
 
 ### **Install docker**
-[http://installdocker.com](https://docker.com)
+[https://docs.docker.com/get-docker/](https://docs.docker.com/get-docker/)
 
 ## Setup
 1. Clone the project repository by running:
