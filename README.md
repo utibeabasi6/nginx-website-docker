@@ -44,6 +44,7 @@ This project aims to demonstrate how to build a Continous integration pipeline t
     ![website](readme_images/website.png)
 
     Click `ctrl+c` to stop the running container
+    > Note: I did not make this website but got it as a template on bootstrapmade.com
 
 ## Github actions
 ### What is github actions? 
