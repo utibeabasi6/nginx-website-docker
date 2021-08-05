@@ -3,6 +3,7 @@
 ![Docker image](readme_images/docker.png)     ![Docker image](readme_images/github_actions.png)
 
 This project aims to demonstrate how to build a Continous integration pipeline to automatically build and push a docker image to docker hub whenever a push is made to the repository.
+> Note: this assumes you have a working knowlege of git, docker and github actions
 
 ## Installation guide
 ### **Install git**
@@ -55,4 +56,5 @@ GitHub Actions makes it easy to automate all your software workflows, now with w
 [https://docs.github.com/actions](https://docs.github.com/actions)
 
 ## A look at our pipeline
-
+We just have a basic pipeline with one job named docker
+![pipeline](readme_images/pipeline)
