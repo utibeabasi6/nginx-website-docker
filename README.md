@@ -57,4 +57,22 @@ GitHub Actions makes it easy to automate all your software workflows, now with w
 
 ## A look at our pipeline
 We just have a basic pipeline with one job named docker
-![pipeline](readme_images/pipeline)
+
+![pipeline](readme_images/pipeline.png)
+
+The pipeline has been configured to run everytime a push is made to the master branch
+
+### Steps
+- Checkout: The `checkout` action is used to checkout the source code
+
+- Setup docker buildx: The `setup-buildx-action` is used to set up docker buildx on the runner
+
+- Dockerhub login: The dockerhub username and password are gotten from the repository secrets and used to login to dockerhub
+
+- Build and push: Finally, the `build-push-action` builds the image from the Dockerfile and pushes it to docker hub
+
+
+The pipeline lives in a file called `nginx-website-docker` which, according to github actions specifications, lives in the `.github/workflows` folder.
+
+### Running the pipeline
+The pipeline runs automatically whenever a push is made to the master branch
