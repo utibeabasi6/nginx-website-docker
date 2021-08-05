@@ -76,3 +76,20 @@ The pipeline lives in a file called `nginx-website-docker` which, according to g
 
 ### Running the pipeline
 The pipeline runs automatically whenever a push is made to the master branch
+
+![alt](readme_images/git-push.png)
+
+![alt](readme_images/workflow1.png)
+
+![alt](readme_images/workflow2.png)
+
+You can view the pushed image in your dockerhub account
+
+![alt](readme_images/dockerhub.png)
+
+
+And there you have it. We have succesfully implemented a CI/CD pipeline with github actions.
+
+## Contact me
+
+Need a devops or SRE engineer to join your team? Send me an email at [utibeabasiumanah6@gmail.com](utibeabasiumanah6@gmail.com)
