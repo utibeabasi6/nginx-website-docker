@@ -12,6 +12,17 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
+      - name: Setup onboardbase
+        uses: utibeabasi6/onboardbase-ga@master
+        with:
+          apikey: ${{secrets.ONBOARDBASE_APIKEY}}
+          passcode: ${{secrets.ONBOARDBASE_PASSCODE}}
+          project: test
+          environment: development
+
+      - name: Test onboardbase
+        run: echo $TEST
+
       - name: Build an image from Dockerfile
         run: |
           docker build -t nginx-website .
