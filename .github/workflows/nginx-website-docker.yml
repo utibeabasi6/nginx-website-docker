@@ -14,7 +14,7 @@ jobs:
 
       - name: Setup onboardbase
         id: fetch-secrets
-        uses: utibeabasi6/onboardbase-ga@master
+        uses: Onboardbase/onboardbase-action@v0.0.8
         with:
           apikey: ${{secrets.ONBOARDBASE_APIKEY}}
           passcode: ${{secrets.ONBOARDBASE_PASSCODE}}
