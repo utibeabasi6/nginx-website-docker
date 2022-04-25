@@ -22,7 +22,7 @@ jobs:
           environment: development
 
       - name: Test onboardbase
-        run: ${{ steps.fetch-secrets.outputs.MYSELF }}'"
+        run: ${{ steps.fetch-secrets.outputs.MYSELF }}
 
       - name: Build an image from Dockerfile
         run: |
