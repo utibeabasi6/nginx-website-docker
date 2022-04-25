@@ -13,6 +13,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Setup onboardbase
+        id: fetch-secrets
         uses: utibeabasi6/onboardbase-ga@master
         with:
           apikey: ${{secrets.ONBOARDBASE_APIKEY}}
@@ -21,7 +22,7 @@ jobs:
           environment: development
 
       - name: Test onboardbase
-        run: echo $TEST
+        run: ${{ steps.fetch-secrets.outputs.MYSELF }}'"
 
       - name: Build an image from Dockerfile
         run: |
