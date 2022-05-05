@@ -1,6 +1,6 @@
 version: 2.1
 orbs: 
-  onboardbase: onboardbase/onboardbase@0.1.6
+  onboardbase: onboardbase/onboardbase@0.1.7
 workflows:
   use-my-orb:
     jobs:
