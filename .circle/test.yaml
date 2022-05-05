@@ -1,0 +1,7 @@
+version: 2.1
+orbs: 
+  onboardbase: onboardbase/onboardbase@0.1.6
+workflows:
+  use-my-orb:
+    jobs:
+      - onboardbase/install
