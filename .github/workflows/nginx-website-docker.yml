@@ -12,21 +12,21 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
-      - name: Setup onboardbase
-        id: fetch-secrets
-        uses: Onboardbase/onboardbase-action@v0.0.8
-        with:
-          apikey: ${{secrets.ONBOARDBASE_APIKEY}}
-          passcode: ${{secrets.ONBOARDBASE_PASSCODE}}
-          project: test
-          environment: development
+#       - name: Setup onboardbase
+#         id: fetch-secrets
+#         uses: Onboardbase/onboardbase-action@v0.0.8
+#         with:
+#           apikey: ${{secrets.ONBOARDBASE_APIKEY}}
+#           passcode: ${{secrets.ONBOARDBASE_PASSCODE}}
+#           project: test
+#           environment: development
 
-      - name: Test onboardbase
-        run: ${{ steps.fetch-secrets.outputs.MYSELF }}
+#       - name: Test onboardbase
+#         run: ${{ steps.fetch-secrets.outputs.MYSELF }}
 
-      - name: Build an image from Dockerfile
-        run: |
-          docker build -t nginx-website .
+#       - name: Build an image from Dockerfile
+#         run: |
+#           docker build -t nginx-website .
       
       - name: Run Trivy vulnerability scanner
         uses: aquasecurity/trivy-action@master
