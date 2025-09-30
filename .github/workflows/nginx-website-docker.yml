@@ -38,6 +38,7 @@ jobs:
 #           vuln-type: 'os,library'
 #           severity: 'CRITICAL,HIGH,MEDIUM,LOW,UNKNOWN'
 
+
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v1
 
