@@ -5,6 +5,7 @@
 This project aims to demonstrate how to build a Continous integration pipeline to automatically build and push a docker image to docker hub whenever a push is made to the repository.
 > Note: this assumes you have a working knowlege of git, docker and github actions
 
+
 ## Installation guide
 ### **Install git**
 [https://git-scm.com/downloads](https://git-scm.com/downloads)
